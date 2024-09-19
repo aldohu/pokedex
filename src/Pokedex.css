@@ -12,6 +12,12 @@
 	flex: 1 1 23%; /* 4 items per row with some space for gaps */
 	box-sizing: border-box; /* Ensures padding and border are included in width */
 }
+.winner {
+	color: white;
+	background-color: green;
+	font-size: 2rem;
+	font-weight: bold;
+}
 
 /* For medium screens (e.g., tablets) */
 @media (max-width: 1024px) {
