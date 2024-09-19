@@ -1,0 +1,28 @@
+/* Pokedex.css */
+
+.pokedex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px; /* Adds spacing between cards */
+	justify-content: center; /* Centers the cards horizontally */
+}
+
+/* Each card will have a flex-basis of 23% to fit 4 cards in a row on larger screens */
+.pokecard {
+	flex: 1 1 23%; /* 4 items per row with some space for gaps */
+	box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+/* For medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+	.pokecard {
+		flex: 1 1 48%; /* 2 items per row */
+	}
+}
+
+/* For small screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+	.pokecard {
+		flex: 1 1 100%; /* 1 item per row */
+	}
+}
